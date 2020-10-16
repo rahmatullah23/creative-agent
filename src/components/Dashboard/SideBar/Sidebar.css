@@ -1,0 +1,18 @@
+.sidebar li a {
+    color: #000;
+}
+.sidebar li  :hover { 
+    color: #009444;
+    display: inline-block;
+    transform: translate(5px);
+}
+.sidebar li{
+    margin-bottom: 10px;
+}
+/* .sidebar li:hover span{
+    display: inline-block;
+    transform: translate(5px);
+} */
+.sidebar svg{
+    margin-right: 5px;
+}

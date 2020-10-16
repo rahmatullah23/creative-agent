@@ -1,0 +1,12 @@
+
+.service-list .card{
+    border-color: transparent;
+}
+
+.service-list .card .card-footer {
+    background: transparent;
+    border: 0;
+}
+.service-bg{
+    background-color: #F4F7FC
+}

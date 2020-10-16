@@ -1,0 +1,9 @@
+
+.testimonial .card{
+    border-color: transparent;
+}
+
+.testimonial .card .card-footer {
+    background: transparent;
+    border: 0;
+}

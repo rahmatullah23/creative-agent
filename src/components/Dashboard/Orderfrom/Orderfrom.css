@@ -1,0 +1,14 @@
+.order-form{
+    margin:0 30px;
+}
+.order-form input {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    width: 300px;
+}
+.error{
+    color: red;
+}
