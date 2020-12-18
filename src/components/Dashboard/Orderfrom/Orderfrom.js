@@ -7,7 +7,7 @@ const Orderfrom = () => {
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => {
         
-        fetch('http://localhost:4008/addOrder', {
+        fetch('https://whispering-atoll-00953.herokuapp.com/addOrder', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

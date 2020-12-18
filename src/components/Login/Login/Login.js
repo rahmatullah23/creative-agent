@@ -2,9 +2,10 @@ import React, { useContext } from 'react';
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebase.config';
+import logo from '../../../images/logos/logo.png'
 import { UserContext } from '../../../App';
 import { useHistory, useLocation } from 'react-router-dom';
-// import LoginBg from '../../../images/loginBg.png';
+import glogo from '../../../images/logos/g-logo.png'
 
 const Login = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -40,29 +41,17 @@ const Login = () => {
   }
 
   return (
-    <div className="login-page container">
-      <div className="row align-items-center" style={{ height: "100vh" }}>
-        <div className="col-md-6 shadow p-5">
-          <div className="form-group">
-            <label htmlFor="">User Name</label>
-            <input type="text" className="form-control" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="">Password</label>
-            <input type="password" className="form-control" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="" className="text-danger">Forgot your password?</label>
-          </div>
-          <div className="from-group mt-5">
-            <button className="btn btn-brand" onClick={handleGoogleSignIn}>Google Sign in</button>
-          </div>
-        </div>
-        <div className="col-md-6 d-none d-md-block align-self-end">
-          <img className="img-fluid"  alt="" />
-        </div>
-      </div>
+    <div className="text-center">
+    <img className="my-5" style={{width:'150px'}} src={logo} alt=""/>
+    <div style={{width:'400px'}} className=' mx-auto text-center p-5 border border-secondary rounded mt-5 bg-white'>
+        <h4 className='font-weight-bold'>Login With</h4>
+        <button onClick={handleGoogleSignIn} className='border rounded-pill mt-4 row d-flex justify-content-between align-items-center py-2 btn'>
+            <img className='w-100 col-2 pl-0' src={glogo} alt=""/>
+            <h6 className="col-10 m-0">Continue with Google</h6>
+        </button>
+        <p>Don’t have an account? <a href="">Create an account</a></p>
     </div>
+</div>
   );
 };
 

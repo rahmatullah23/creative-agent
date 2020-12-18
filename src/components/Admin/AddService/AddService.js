@@ -12,7 +12,7 @@ const AddService = () => {
 
 
 
-        fetch('http://localhost:4008/addService', {
+        fetch('https://whispering-atoll-00953.herokuapp.com/addService', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

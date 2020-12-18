@@ -12,7 +12,7 @@ const AddEmail = () => {
 
 
 
-        fetch('http://localhost:4008/addAdmin', {
+        fetch('https://whispering-atoll-00953.herokuapp.com/addAdmin', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

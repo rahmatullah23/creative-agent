@@ -10,7 +10,7 @@ const ServiceData = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4008/services')
+        fetch('https://whispering-atoll-00953.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])

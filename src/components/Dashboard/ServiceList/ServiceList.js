@@ -11,7 +11,7 @@ const ServiceList = () => {
     const [services, setServices] = useState([]);
     console.log(services)
     useEffect(() => {
-        fetch('http://localhost:4008/services')
+        fetch('https://whispering-atoll-00953.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])

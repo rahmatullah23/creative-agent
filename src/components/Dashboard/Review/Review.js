@@ -12,7 +12,7 @@ const Review = () => {
 
 
 
-        fetch('http://localhost:4008/addReview', {
+        fetch('https://whispering-atoll-00953.herokuapp.com/addReview', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)
